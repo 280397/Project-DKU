@@ -9,7 +9,7 @@ class Auth extends CI_Controller
     $this->load->library('form_validation');
   }
 
-  // login user
+  // login userr
   public function index()
   {
 
