@@ -20,7 +20,7 @@ class Admin extends CI_Controller
 
 			$queryMenu = $this->db->get_where('users_menu', ['menu' => $menu])->row_array();
 			$menu_id = $queryMenu['id'];
-
+			// user
 			$userAccess = $this->db->get_where('users_access_menu', [
 				'role_id' => $role_id,
 				'menu_id' => $menu_id
